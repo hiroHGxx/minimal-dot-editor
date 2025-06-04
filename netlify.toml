@@ -1,0 +1,21 @@
+[build]
+  # ビルドコマンドは不要なため空欄
+  command = ""
+  # 公開ディレクトリ（ルートディレクトリ）
+  publish = "."
+
+[build.environment]
+  # Node.jsのバージョンを指定（Netlifyのデフォルトを使用）
+  NODE_VERSION = "18"
+
+[dev]
+  # 開発サーバーの設定
+  port = 8888
+  publish = "."
+  target = "*"
+
+# リダイレクト設定（SPA用）
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
