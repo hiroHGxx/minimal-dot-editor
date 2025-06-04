@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ミニマルドット絵エディタ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>ミニマルドット絵エディタ</h1>
+        
+        <div id="color-palette-container" class="color-palette"></div>
+        
+        <div id="grid-container" class="grid"></div>
+        
+        <div id="controls-container" class="controls">
+            <div class="control-group">
+                <label for="grid-size">グリッドサイズ:</label>
+                <select id="grid-size" class="control-select">
+                    <option value="8">8x8</option>
+                    <option value="16" selected>16x16</option>
+                    <option value="32">32x32</option>
+                    <option value="64">64x64</option>
+                </select>
+                <button id="resize-button" class="control-button">サイズ変更</button>
+            </div>
+            <div class="control-group">
+                <button id="clear-button" class="control-button">全消し</button>
+                <button id="save-button" class="control-button">画像を保存</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
